@@ -11,8 +11,6 @@ public class GmailSteps {
 
     @Given("User launch chrome browser")
     public void user_launch_chrome_browser() {
-        // Set the path to the ChromeDriver executable
-        //System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
         // Setup WebDriverManager for ChromeDriver
         WebDriverManager.chromedriver().setup();
 
@@ -24,6 +22,9 @@ public class GmailSteps {
 
         // Navigate to the desired URL
         driver.get("https://www.google.com/");
+
+        driver.quit();
+
     }
 
     @When("user click on sign in button")
