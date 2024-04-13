@@ -1,6 +1,6 @@
-package stepdefinitions;
+package corejava;
 
-public class SampleJavaProgram {
+public class FirstJavaProgram {
     public static void main(String [] args){
         String name="Welcome Somasekhar";
 
